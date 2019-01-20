@@ -1,0 +1,1115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/student.ico">
+
+    <title>Jorah</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+    <style>
+        .nav-item a:hover {
+            color: #FFCF7F !important;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <a class="navbar-brand text-primary" href="#">Jorah Entertainment</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">latest</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Category</a>
+                </li>
+
+            </ul>
+
+        </div>
+        <ul class="nav justify-content-end">
+            
+            <li class="nav-item">
+              <a class="nav-link text-success" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-success" href="#">Sign Up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-success" href="#">Info</a>
+            </li>
+          </ul>
+
+
+
+    </nav>
+    <!-- Jumbotron -->
+    <div class="jumbotron bg-secondary text-center">
+        <h1 class="display-3" style="color:#FFCF7F">Jorah Entertainment</h1>
+        <p class="lead" style="color:rgb(236, 180, 84)">Get your favorite movies here</p>
+
+        
+        </div>
+    </div><!-- /.jumbotron -->
+
+    
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>...</h5>
+                <p>...</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>...</h5>
+                <p>...</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>...</h5>
+                <p>...</p>
+              </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <div class="search-overlay block-dark fade" ng-show="showSearch" ng-cloak>
+        <site-wide-search></site-wide-search>
+    </div>
+    
+        
+    
+    <nonstop-promo-card data-hide-all="false" data-hide-overlay="true"></nonstop-promo-card>
+    <div class="page-header-background">
+        <div sn-skrollr data-54-top-top="opacity: 1;" data-54-top-bottom="opacity: 0.3;" class="page-header generic-collection-header federal-letterbox-1 m-b-0">
+            <div class="container">
+                <div class="header-info header-info-center">
+                    <h1 sn-skrollr data-130-top-top="transform: translateY(0%);" data--54-top-bottom="transform: translateY(150%);" class="h-underline"><span>Movies</span></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <div class="block block-portrait block-light block-white clearfix">
+        <div class="container block-grid">
+            <div class="row-tight">
+                <unavailable-movie></unavailable-movie>
+            </div>
+                <div class="row row-tight">
+            <div class="col-xs-12">
+                <h2 class="h-underline">
+                    <span></span>
+                </h2>
+            </div>
+        </div>
+
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Your Choice!!!</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Action <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Love story</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" >Drama</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="#" >Horror</a>
+                          </li>
+                          <li class="nav-item">
+                                <a class="nav-link" href="#" >Adventure</a>
+                              </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+                </div>
+              </nav>
+    
+
+      <div class="row row-tight">
+        <div class="movies-grid col-xs-6 col-md-4 col-lg-3">
+                <div class="poster">
+                    <a href="/movies/abduction" amplitude-navigation-grid-item-select category-title="Movies" grid-context="Movies" content="Abduction" content-type="Movie" grid-index="0">
+                        <img src="https://freeform.azureedge.net/showms/2017/334/5ba71ac5-5313-4cee-898e-b99516f15140.jpg" class="img-fluid"/>
+                        <div class="info-overlay">
+                            <p class="card-info card-info-top-right pull-right">
+                                <span class="sign-in-padlock" data-sign-in-padlock data-requires-sign-in="True" ng-cloak>
+<img ng-src="{{padlockIcon}}" ng-attr-alt="{{altText}}" height="40" width="40" class="card-play-status">
+</span>
+                            </p>
+
+                            <div class="info-content">
+                                <h3 class="m-b-0">Abduction</h3>
+                                <span class="small sub-heading">2014</span>
+                                <hr class="hr-xs hr-left hr-colored">
+                                <h5>Actors</h5>
+                                <p>David<br>Morgan<br>Janice</p>
+                                <p>A thriller centered on a young man who sets out to uncover the truth.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+        </div>
+
+        <div class="movies-grid col-xs-6 col-md-4 col-lg-3">
+            <div class="poster">
+                <a href="/movies/alvin-the-chipmunks-2-the-squeakel" amplitude-navigation-grid-item-select category-title="Movies" grid-context="Movies" content="Alvin &amp; the Chipmunks 2: The Squeakel" content-type="Movie" grid-index="1">
+                    <img src="https://freeform.azureedge.net/showms/2018/327/15d42b7c-e011-4db7-a4b5-cd7d7d3dd0c7.jpg" class="img-fluid"/>
+                    <div class="info-overlay">
+                        <p class="card-info card-info-top-right pull-right">
+                            <span class="sign-in-padlock" data-sign-in-padlock data-requires-sign-in="True" ng-cloak>
+<img ng-src="{{padlockIcon}}" ng-attr-alt="{{altText}}" height="40" width="40" class="card-play-status">
+</span>
+                        </p>
+
+                        <div class="info-content">
+                            <h3 class="m-b-0">Alvin & the Chipmunks 2: The Squeakel</h3>
+                            <span class="small sub-heading">2009</span>
+                            <hr class="hr-xs hr-left hr-colored">
+                            <h5>Actors</h5>
+                                <p>David<br>Morgan<br>Janice</p>
+                            <p>Alvin, Simon and Theodore enter a battle of the bands.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+    </div>
+    <div class="movies-grid col-xs-6 col-md-4 col-lg-3">
+            <div class="poster">
+                <a href="/movies/au-pair-3-adventure-in-paradise" amplitude-navigation-grid-item-select category-title="Movies" grid-context="Movies" content="Au Pair 3 Adventure in Paradise" content-type="Movie" grid-index="2">
+                    <img src="https://freeform.azureedge.net/showms/2017/334/02eb499f-abeb-4ecb-b22f-93a6de7ec283.jpg" class="img-fluid"/>
+                    <div class="info-overlay">
+                        <p class="card-info card-info-top-right pull-right">
+                            <span class="sign-in-padlock" data-sign-in-padlock data-requires-sign-in="True" ng-cloak>
+<img ng-src="{{padlockIcon}}" ng-attr-alt="{{altText}}" height="40" width="40" class="card-play-status">
+</span>
+                        </p>
+
+                        <div class="info-content">
+                            <h3 class="m-b-0">Au Pair 3 Adventure in Paradise</h3>
+                            <span class="small sub-heading">2010</span>
+                            <hr class="hr-xs hr-left hr-colored">
+                            <h5>Actors</h5>
+                                <p>David<br>Morgan<br>Janice</p>
+                            <p>Oliver surprises the family with a vacation to Puerto Rico.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+    </div>
+    <div class="movies-grid col-xs-6 col-md-4 col-lg-3">
+            <div class="poster">
+                <a href="/movies/bad-teacher" amplitude-navigation-grid-item-select category-title="Movies" grid-context="Movies" content="Bad Teacher" content-type="Movie" grid-index="3">
+                    <img src="https://freeform.azureedge.net/showms/2019/11/3e6cb367-a84d-43c0-8411-75eb775a1699.jpg" class="img-fluid"/>
+                    <div class="info-overlay">
+                        <p class="card-info card-info-top-right pull-right">
+                            <span class="sign-in-padlock" data-sign-in-padlock data-requires-sign-in="True" ng-cloak>
+<img ng-src="{{padlockIcon}}" ng-attr-alt="{{altText}}" height="40" width="40" class="card-play-status">
+</span>
+                        </p>
+
+                        <div class="info-content">
+                            <h3 class="m-b-0">Bad Teacher</h3>
+                            <span class="small sub-heading">2011</span>
+                            <hr class="hr-xs hr-left hr-colored">
+                            <h5>Actors</h5>
+                                <p>David<br>Morgan<br>Janice</p>
+                            <p>A lazy teacher is forced to return to her job.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+    </div>
+    <div class="movies-grid col-xs-6 col-md-4 col-lg-3">
+            <div class="poster">
+                <a href="/movies/beauty-and-the-briefcase" amplitude-navigation-grid-item-select category-title="Movies" grid-context="Movies" content="Beauty and the Briefcase" content-type="Movie" grid-index="4">
+                    <img src="https://freeform.azureedge.net/showms/2018/132/0ed2427a-3bcc-41fc-9616-ead0415ae440.jpg" class="img-fluid"/>
+                    <div class="info-overlay">
+                        <p class="card-info card-info-top-right pull-right">
+                            <span class="sign-in-padlock" data-sign-in-padlock data-requires-sign-in="True" ng-cloak>
+<img ng-src="{{padlockIcon}}" ng-attr-alt="{{altText}}" height="40" width="40" class="card-play-status">
+</span>
+                        </p>
+
+                        <div class="info-content">
+                            <h3 class="m-b-0">Beauty and the Briefcase</h3>
+                            <span class="small sub-heading">2011</span>
+                            <hr class="hr-xs hr-left hr-colored">
+                            <h5>Actors</h5>
+                                <p>David<br>Morgan<br>Janice</p>
+                            <p>Hilary Duff stars as Lane Daniels, a fashion journalist.</p>
+                            
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+    </div>
+    <div class="movies-grid col-xs-6 col-md-4 col-lg-3">
+            <div class="poster">
+                <a href="/movies/beyond-the-lights" amplitude-navigation-grid-item-select category-title="Movies" grid-context="Movies" content="Beyond the Lights" content-type="Movie" grid-index="5">
+                    <img src="https://freeform.azureedge.net/showms/2018/362/056a6e38-1633-4737-8c46-eba87a761420.jpg" class="img-fluid"/>
+                    <div class="info-overlay">
+                        <p class="card-info card-info-top-right pull-right">
+                            <span class="sign-in-padlock" data-sign-in-padlock data-requires-sign-in="True" ng-cloak>
+<img ng-src="{{padlockIcon}}" ng-attr-alt="{{altText}}" height="40" width="40" class="card-play-status">
+</span>
+                        </p>
+
+                        <div class="info-content">
+                            <h3 class="m-b-0">Beyond the Lights</h3>
+                            <span class="small sub-heading">2014</span>
+                            <hr class="hr-xs hr-left hr-colored">
+                            <h5>Actors</h5>
+                                <p>David<br>Morgan<br>Janice</p>
+                            <p>Noni is the music world's latest superstar.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+    </div>
+    <div class="movies-grid col-xs-6 col-md-4 col-lg-3">
+            <div class="poster">
+                <a href="/movies/bruce-almighty" amplitude-navigation-grid-item-select category-title="Movies" grid-context="Movies" content="Bruce Almighty" content-type="Movie" grid-index="6">
+                    <img src="https://freeform.azureedge.net/showms/2018/252/2bd5a29b-8b2c-46dd-bd44-49fdd4aecac6.jpg" class="img-fluid"/>
+                    <div class="info-overlay">
+                        <p class="card-info card-info-top-right pull-right">
+                            <span class="sign-in-padlock" data-sign-in-padlock data-requires-sign-in="True" ng-cloak>
+<img ng-src="{{padlockIcon}}" ng-attr-alt="{{altText}}" height="40" width="40" class="card-play-status">
+</span>
+                        </p>
+
+                        <div class="info-content">
+                            <h3 class="m-b-0">Bruce Almighty</h3>
+                            <span class="small sub-heading">2003</span>
+                            <hr class="hr-xs hr-left hr-colored">
+                            <h5>Actors</h5>
+                                <p>David<br>Morgan<br>Janice</p>
+                            <p>An ordinary guy is given almighty powers by God.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+    </div>
+    <div class="movies-grid col-xs-6 col-md-4 col-lg-3">
+            <div class="poster">
+                <a href="/movies/campus-confidential" amplitude-navigation-grid-item-select category-title="Movies" grid-context="Movies" content="Campus Confidential" content-type="Movie" grid-index="7">
+                    <img src="https://freeform.azureedge.net/showms/2017/334/8978ce46-76ae-4eff-9a7a-1542238e21cf.jpg" class="img-fluid"/>
+                    <div class="info-overlay">
+                        <p class="card-info card-info-top-right pull-right">
+                            <span class="sign-in-padlock" data-sign-in-padlock data-requires-sign-in="True" ng-cloak>
+<img ng-src="{{padlockIcon}}" ng-attr-alt="{{altText}}" height="40" width="40" class="card-play-status">
+</span>
+                        </p>
+
+                        <div class="info-content">
+                            <h3 class="m-b-0">Campus Confidential</h3>
+                            <span class="small sub-heading">2010</span>
+                            <hr class="hr-xs hr-left hr-colored">
+                            <h5>Actors</h5>
+                                <p>David<br>Morgan<br>Janice</p>
+                            <p>Violet exposes all the cool kids' secrets in a tell-all tabloid.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+    </div>
+    <div class="movies-grid col-xs-6 col-md-4 col-lg-3">
+            <div class="poster">
+                <a href="/movies/crimes-of-fashion" amplitude-navigation-grid-item-select category-title="Movies" grid-context="Movies" content="Crimes of Fashion" content-type="Movie" grid-index="8">
+                    <img src="https://freeform.azureedge.net/showms/2017/334/260d99e2-0fce-4135-8e6c-f37c647171a9.jpg" class="img-fluid"/>
+                    <div class="info-overlay">
+                        <p class="card-info card-info-top-right pull-right">
+                            <span class="sign-in-padlock" data-sign-in-padlock data-requires-sign-in="True" ng-cloak>
+<img ng-src="{{padlockIcon}}" ng-attr-alt="{{altText}}" height="40" width="40" class="card-play-status">
+</span>
+                        </p>
+
+                        <div class="info-content">
+                            <h3 class="m-b-0">Crimes of Fashion</h3>
+                            <span class="small sub-heading">2004</span>
+                            <hr class="hr-xs hr-left hr-colored">
+                            <h5>Actors</h5>
+                                <p>David<br>Morgan<br>Janice</p>
+                            <p>When her grandfather passes away, Brooke's life is turned upside down.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+    </div>
+    <div class="movies-grid col-xs-6 col-md-4 col-lg-3">
+            <div class="poster">
+                <a href="/movies/cutting-edge-4-fire-and-ice" amplitude-navigation-grid-item-select category-title="Movies" grid-context="Movies" content="Cutting Edge 4: Fire and Ice" content-type="Movie" grid-index="9">
+                    <img src="https://freeform.azureedge.net/showms/2017/334/91bbe923-a5bc-4981-8ae1-196fc306727d.jpg" class="img-fluid"/>
+                    <div class="info-overlay">
+                        <p class="card-info card-info-top-right pull-right">
+                            <span class="sign-in-padlock" data-sign-in-padlock data-requires-sign-in="True" ng-cloak>
+<img ng-src="{{padlockIcon}}" ng-attr-alt="{{altText}}" height="40" width="40" class="card-play-status">
+</span>
+                        </p>
+
+                        <div class="info-content">
+                            <h3 class="m-b-0">Cutting Edge 4: Fire and Ice</h3>
+                            <span class="small sub-heading">2010</span>
+                            <hr class="hr-xs hr-left hr-colored">
+                            <h5>Actors</h5>
+                                <p>David<br>Morgan<br>Janice</p>
+                            <p>Francia Raisa reprises her role as Alexandra Alex Delgado.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+    </div>
+    <div class="movies-grid col-xs-6 col-md-4 col-lg-3">
+            <div class="poster">
+                <a href="/movies/dirty-dancing" amplitude-navigation-grid-item-select category-title="Movies" grid-context="Movies" content="Dirty Dancing" content-type="Movie" grid-index="10">
+                    <img src="https://freeform.azureedge.net/showms/2017/334/7f521d63-84fa-4bc9-93b7-dc605aa91b70.jpg" class="img-fluid"/>
+                    <div class="info-overlay">
+                        <p class="card-info card-info-top-right pull-right">
+                            <span class="sign-in-padlock" data-sign-in-padlock data-requires-sign-in="True" ng-cloak>
+<img ng-src="{{padlockIcon}}" ng-attr-alt="{{altText}}" height="40" width="40" class="card-play-status">
+</span>
+                        </p>
+
+                        <div class="info-content">
+                            <h3 class="m-b-0">Dirty Dancing</h3>
+                            <span class="small sub-heading">1987</span>
+                            <hr class="hr-xs hr-left hr-colored">
+                            <h5>Actors</h5>
+                                <p>David<br>Morgan<br>Janice</p>
+                            <p>Spending the summer in camp, Frances Houseman falls in love.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+    </div>
+    <div class="movies-grid col-xs-6 col-md-4 col-lg-3">
+            <div class="poster">
+                <a href="/movies/evan-almighty" amplitude-navigation-grid-item-select category-title="Movies" grid-context="Movies" content="Evan Almighty" content-type="Movie" grid-index="11">
+                    <img src="https://freeform.azureedge.net/showms/2018/361/e1f0bf8b-68a2-46db-b01c-dd0c318e2e57.jpg" class="img-fluid"/>
+                    <div class="info-overlay">
+                        <p class="card-info card-info-top-right pull-right">
+                            <span class="sign-in-padlock" data-sign-in-padlock data-requires-sign-in="True" ng-cloak>
+<img ng-src="{{padlockIcon}}" ng-attr-alt="{{altText}}" height="40" width="40" class="card-play-status">
+</span>
+                        </p>
+
+                        <div class="info-content">
+                            <h3 class="m-b-0">Evan Almighty</h3>
+                            <span class="small sub-heading">2007</span>
+                            <hr class="hr-xs hr-left hr-colored">
+                            <h5>Actors</h5>
+                                <p>David<br>Morgan<br>Janice</p>
+                            <p>God commands a former newscaster to build an ark.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+    </div>
+    <div class="movies-grid col-xs-6 col-md-4 col-lg-3">
+            <div class="poster">
+                <a href="/movies/fallen-iii-the-destiny" amplitude-navigation-grid-item-select category-title="Movies" grid-context="Movies" content="Fallen III: The Destiny" content-type="Movie" grid-index="12">
+                    <img src="https://freeform.azureedge.net/showms/2017/347/c0a3bfe7-9510-447f-a1d1-49c95b6def25.jpg" class="img-fluid"/>
+                    <div class="info-overlay">
+                        <p class="card-info card-info-top-right pull-right">
+                            <span class="sign-in-padlock" data-sign-in-padlock data-requires-sign-in="True" ng-cloak>
+<img ng-src="{{padlockIcon}}" ng-attr-alt="{{altText}}" height="40" width="40" class="card-play-status">
+</span>
+                        </p>
+
+                        <div class="info-content">
+                            <h3 class="m-b-0">Fallen III: The Destiny</h3>
+                            <span class="small sub-heading">2007</span>
+                            <hr class="hr-xs hr-left hr-colored">
+                            <h5>Actors</h5>
+                                <p>David<br>Morgan<br>Janice</p>
+                            <p>Aaron and Vilma continue their quest to find the Light Bringer.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+    </div>
+    <div class="movies-grid col-xs-6 col-md-4 col-lg-3">
+            <div class="poster">
+                <a href="/movies/fallen" amplitude-navigation-grid-item-select category-title="Movies" grid-context="Movies" content="Fallen Part 1" content-type="Movie" grid-index="13">
+                    <img src="https://freeform.azureedge.net/showms/2017/347/53982289-3eac-4d10-8424-f81c132498bc.jpg" class="img-fluid"/>
+                    <div class="info-overlay">
+                        <p class="card-info card-info-top-right pull-right">
+                            <span class="sign-in-padlock" data-sign-in-padlock data-requires-sign-in="True" ng-cloak>
+<img ng-src="{{padlockIcon}}" ng-attr-alt="{{altText}}" height="40" width="40" class="card-play-status">
+</span>
+                        </p>
+
+                        <div class="info-content">
+                            <h3 class="m-b-0">Fallen Part 1</h3>
+                            <span class="small sub-heading">2006</span>
+                            <hr class="hr-xs hr-left hr-colored">
+                            <h5>Actors</h5>
+                                <p>David<br>Morgan<br>Janice</p>
+                            <p>An 18-year-old, who struggles to come to terms with his new identity.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+    </div>
+    <div class="movies-grid col-xs-6 col-md-4 col-lg-3">
+            <div class="poster">
+                <a href="/movies/fallen-part-2" amplitude-navigation-grid-item-select category-title="Movies" grid-context="Movies" content="Fallen Part 2" content-type="Movie" grid-index="14">
+                    <img src="https://freeform.azureedge.net/showms/2019/1/7e27ef85-ca28-4341-8b3a-044571eebd55.jpg" class="img-fluid"/>
+                    <div class="info-overlay">
+                        <p class="card-info card-info-top-right pull-right">
+                            <span class="sign-in-padlock" data-sign-in-padlock data-requires-sign-in="True" ng-cloak>
+<img ng-src="{{padlockIcon}}" ng-attr-alt="{{altText}}" height="40" width="40" class="card-play-status">
+</span>
+                        </p>
+
+                        <div class="info-content">
+                            <h3 class="m-b-0">Fallen Part 2</h3>
+                            <span class="small sub-heading">2007</span>
+                            <hr class="hr-xs hr-left hr-colored">
+                            <h5>Actors</h5>
+                                <p>David<br>Morgan<br>Janice</p>
+                            <p>Aaron tries to rescue Vilma without drawing attention to his location.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+    </div>
+    <div class="movies-grid col-xs-6 col-md-4 col-lg-3">
+            <div class="poster">
+                <a href="/movies/girl-most-likely" amplitude-navigation-grid-item-select category-title="Movies" grid-context="Movies" content="Girl Most Likely" content-type="Movie" grid-index="15">
+                    <img src="https://freeform.azureedge.net/showms/2018/355/99f2e896-f9eb-48da-b026-67863204c752.jpg" class="img-fluid"/>
+                    <div class="info-overlay">
+                        <p class="card-info card-info-top-right pull-right">
+                            <span class="sign-in-padlock" data-sign-in-padlock data-requires-sign-in="True" ng-cloak>
+<img ng-src="{{padlockIcon}}" ng-attr-alt="{{altText}}" height="40" width="40" class="card-play-status">
+</span>
+                        </p>
+
+                        <div class="info-content">
+                            <h3 class="m-b-0">Girl Most Likely</h3>
+                            <span class="small sub-heading">2013</span>
+                            <hr class="hr-xs hr-left hr-colored">
+                            <h5>Actors</h5>
+                                <p>David<br>Morgan<br>Janice</p>
+                            <p>Imogene has a crisis of confidence.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+    </div>
+    <div class="movies-grid col-xs-6 col-md-4 col-lg-3">
+            <div class="poster">
+                <a href="/movies/hello-sister-goodbye-life" amplitude-navigation-grid-item-select category-title="Movies" grid-context="Movies" content="Hello Sister, Goodbye Life!" content-type="Movie" grid-index="16">
+                    <img src="https://freeform.azureedge.net/showms/2018/131/0429fd54-aa6b-4d17-a9fe-1a8d50cb8460.jpg" class="img-fluid"/>
+                    <div class="info-overlay">
+                        <p class="card-info card-info-top-right pull-right">
+                            <span class="sign-in-padlock" data-sign-in-padlock data-requires-sign-in="True" ng-cloak>
+<img ng-src="{{padlockIcon}}" ng-attr-alt="{{altText}}" height="40" width="40" class="card-play-status">
+</span>
+                        </p>
+
+                        <div class="info-content">
+                            <h3 class="m-b-0">Hello Sister, Goodbye Life!</h3>
+                            <span class="small sub-heading">2006</span>
+                            <hr class="hr-xs hr-left hr-colored">
+                            <h5>Actors</h5>
+                                <p>David<br>Morgan<br>Janice</p>
+                            <p>Olivia inherits custody of her 7-year-old sister.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+    </div>
+    <div class="movies-grid col-xs-6 col-md-4 col-lg-3">
+            <div class="poster">
+                <a href="/movies/home-alone-2-lost-in-new-york" amplitude-navigation-grid-item-select category-title="Movies" grid-context="Movies" content="Home Alone 2: Lost in New York" content-type="Movie" grid-index="17">
+                    <img src="https://freeform.azureedge.net/showms/2019/18/e2684cdc-754d-46d2-8f8b-9078d83473e8.jpg" class="img-fluid"/>
+                    <div class="info-overlay">
+                        <p class="card-info card-info-top-right pull-right">
+                            <span class="sign-in-padlock" data-sign-in-padlock data-requires-sign-in="True" ng-cloak>
+<img ng-src="{{padlockIcon}}" ng-attr-alt="{{altText}}" height="40" width="40" class="card-play-status">
+</span>
+                        </p>
+
+                        <div class="info-content">
+                            <h3 class="m-b-0">Home Alone 2: Lost in New York</h3>
+                            <span class="small sub-heading">1992</span>
+                            <hr class="hr-xs hr-left hr-colored">
+                            <h5>Actors</h5>
+                                <p>David<br>Morgan<br>Janice</p>
+                            <p>The Home Alone boy finds himself in New York City.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+    </div>
+    <div class="movies-grid col-xs-6 col-md-4 col-lg-3">
+            <div class="poster">
+                <a href="/movies/the-hunchback-of-notre-dame" amplitude-navigation-grid-item-select category-title="Movies" grid-context="Movies" content="The Hunchback of Notre Dame" content-type="Movie" grid-index="18">
+                    <img src="https://freeform.azureedge.net/showms/2018/49/58b85092-7b2b-4efe-8585-8380a6cb7d1c.jpg" class="img-fluid"/>
+                    <div class="info-overlay">
+                        <p class="card-info card-info-top-right pull-right">
+                            <span class="sign-in-padlock" data-sign-in-padlock data-requires-sign-in="True" ng-cloak>
+<img ng-src="{{padlockIcon}}" ng-attr-alt="{{altText}}" height="40" width="40" class="card-play-status">
+</span>
+                        </p>
+
+                        <div class="info-content">
+                            <h3 class="m-b-0">The Hunchback of Notre Dame</h3>
+                            <span class="small sub-heading">1996</span>
+                            <hr class="hr-xs hr-left hr-colored">
+                            <h5>Actors</h5>
+                                <p>David<br>Morgan<br>Janice</p>
+                            <p>Quasimodo earns his keep as a bell ringer in Paris.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+    </div>
+    <div class="movies-grid col-xs-6 col-md-4 col-lg-3">
+            <div class="poster">
+                <a href="/movies/the-incredibles" amplitude-navigation-grid-item-select category-title="Movies" grid-context="Movies" content="The Incredibles" content-type="Movie" grid-index="19">
+                    <img src="https://freeform.azureedge.net/showms/2018/161/90b707db-bb29-429c-83c9-2a658c013b6c.jpg" class="img-fluid"/>
+                    <div class="info-overlay">
+                        <p class="card-info card-info-top-right pull-right">
+                            <span class="sign-in-padlock" data-sign-in-padlock data-requires-sign-in="True" ng-cloak>
+<img ng-src="{{padlockIcon}}" ng-attr-alt="{{altText}}" height="40" width="40" class="card-play-status">
+</span>
+                        </p>
+
+                        <div class="info-content">
+                            <h3 class="m-b-0">The Incredibles</h3>
+                            <span class="small sub-heading">2004</span>
+                            <hr class="hr-xs hr-left hr-colored">
+                            <h5>Actors</h5>
+                                <p>David<br>Morgan<br>Janice</p>
+                            <p>A family of former superheroes go back into action.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+    </div>
+    <div class="movies-grid col-xs-6 col-md-4 col-lg-3">
+            <div class="poster">
+                <a href="/movies/life-size-2-a-christmas-eve" amplitude-navigation-grid-item-select category-title="Movies" grid-context="Movies" content="Life-Size 2: A Christmas Eve" content-type="Movie" grid-index="20">
+                    <img src="https://freeform.azureedge.net/showms/2018/337/d9b367eb-c961-4521-b009-c0e52fb63c89.jpg" class="img-fluid"/>
+                    <div class="info-overlay">
+                        <p class="card-info card-info-top-right pull-right">
+                            <span class="sign-in-padlock" data-sign-in-padlock data-requires-sign-in="True" ng-cloak>
+<img ng-src="{{padlockIcon}}" ng-attr-alt="{{altText}}" height="40" width="40" class="card-play-status">
+</span>
+                        </p>
+
+                        <div class="info-content">
+                            <h3 class="m-b-0">Life-Size 2: A Christmas Eve</h3>
+                            <span class="small sub-heading">2018</span>
+                            <hr class="hr-xs hr-left hr-colored">
+                            <h5>Actors</h5>
+                                <p>David<br>Morgan<br>Janice</p>
+                            <p>Eve magically awakes to help get Grace back on track.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+    </div>
+    <div class="movies-grid col-xs-6 col-md-4 col-lg-3">
+            <div class="poster">
+                <a href="/movies/lovestruck-the-musical" amplitude-navigation-grid-item-select category-title="Movies" grid-context="Movies" content="Lovestruck: The Musical" content-type="Movie" grid-index="21">
+                    <img src="https://freeform.azureedge.net/showms/2017/334/5f1522dd-846a-45ee-a4a7-41376b4399a5.jpg" class="img-fluid"/>
+                    <div class="info-overlay">
+                        <p class="card-info card-info-top-right pull-right">
+                            <span class="sign-in-padlock" data-sign-in-padlock data-requires-sign-in="True" ng-cloak>
+<img ng-src="{{padlockIcon}}" ng-attr-alt="{{altText}}" height="40" width="40" class="card-play-status">
+</span>
+                        </p>
+
+                        <div class="info-content">
+                            <h3 class="m-b-0">Lovestruck: The Musical</h3>
+                            <span class="small sub-heading">2013</span>
+                            <hr class="hr-xs hr-left hr-colored">
+                            <h5>Actors</h5>
+                                <p>David<br>Morgan<br>Janice</p>
+                            <p>Mirabella decides to quit the show to get married.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+    </div>
+    <div class="movies-grid col-xs-6 col-md-4 col-lg-3">
+            <div class="poster">
+                <a href="/movies/million-dollar-arm" amplitude-navigation-grid-item-select category-title="Movies" grid-context="Movies" content="Million Dollar Arm" content-type="Movie" grid-index="22">
+                    <img src="https://freeform.azureedge.net/showms/2018/361/3c02aeeb-460d-42cf-9dd5-c8ec523e8885.jpg" class="img-fluid"/>
+                    <div class="info-overlay">
+                        <p class="card-info card-info-top-right pull-right">
+                            <span class="sign-in-padlock" data-sign-in-padlock data-requires-sign-in="True" ng-cloak>
+<img ng-src="{{padlockIcon}}" ng-attr-alt="{{altText}}" height="40" width="40" class="card-play-status">
+</span>
+                        </p>
+
+                        <div class="info-content">
+                            <h3 class="m-b-0">Million Dollar Arm</h3>
+                            <span class="small sub-heading">2014</span>
+                            <hr class="hr-xs hr-left hr-colored">
+                            <h5>Actors</h5>
+                                <p>David<br>Morgan<br>Janice</p>
+                            <p>An agent stages an unconventional recruitment strategy.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+    </div>
+    <div class="movies-grid col-xs-6 col-md-4 col-lg-3">
+            <div class="poster">
+                <a href="/movies/my-fake-fianc" amplitude-navigation-grid-item-select category-title="Movies" grid-context="Movies" content="My Fake Fianc&#233;" content-type="Movie" grid-index="23">
+                    <img src="https://freeform.azureedge.net/showms/2018/131/f18f97fe-fd80-4530-9a72-73f75902f071.jpg" class="img-fluid"/>
+                    <div class="info-overlay">
+                        <p class="card-info card-info-top-right pull-right">
+                            <span class="sign-in-padlock" data-sign-in-padlock data-requires-sign-in="True" ng-cloak>
+<img ng-src="{{padlockIcon}}" ng-attr-alt="{{altText}}" height="40" width="40" class="card-play-status">
+</span>
+                        </p>
+
+                        <div class="info-content">
+                            <h3 class="m-b-0">My Fake Fiancé</h3>
+                            <span class="small sub-heading">2009</span>
+                            <hr class="hr-xs hr-left hr-colored">
+                            <h5>Actors</h5>
+                                <p>David<br>Morgan<br>Janice</p>
+                            <p>Vince and Jennifer meet at a friend's wedding.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+    </div>
+    <div class="movies-grid col-xs-6 col-md-4 col-lg-3">
+            <div class="poster">
+                <a href="/movies/my-future-boyfriend" amplitude-navigation-grid-item-select category-title="Movies" grid-context="Movies" content="My Future Boyfriend" content-type="Movie" grid-index="24">
+                    <img src="https://freeform.azureedge.net/showms/2017/334/0aa6c3a9-acf0-4931-ba11-e3808b60a146.jpg" class="img-fluid"/>
+                    <div class="info-overlay">
+                        <p class="card-info card-info-top-right pull-right">
+                            <span class="sign-in-padlock" data-sign-in-padlock data-requires-sign-in="True" ng-cloak>
+<img ng-src="{{padlockIcon}}" ng-attr-alt="{{altText}}" height="40" width="40" class="card-play-status">
+</span>
+                        </p>
+
+                        <div class="info-content">
+                            <h3 class="m-b-0">My Future Boyfriend</h3>
+                            <span class="small sub-heading">2011</span>
+                            <hr class="hr-xs hr-left hr-colored">
+                            <h5>Actors</h5>
+                                <p>David<br>Morgan<br>Janice</p>
+                            <p>A young man from the loveless future, travels to present day New Orleans.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+    </div>
+    <div class="movies-grid col-xs-6 col-md-4 col-lg-3">
+            <div class="poster">
+                <a href="/movies/pizza-my-heart" amplitude-navigation-grid-item-select category-title="Movies" grid-context="Movies" content="Pizza My Heart" content-type="Movie" grid-index="25">
+                    <img src="https://freeform.azureedge.net/showms/2017/334/99dd5354-1306-44cd-b321-86c6cb11136e.jpg" class="img-fluid"/>
+                    <div class="info-overlay">
+                        <p class="card-info card-info-top-right pull-right">
+                            <span class="sign-in-padlock" data-sign-in-padlock data-requires-sign-in="True" ng-cloak>
+<img ng-src="{{padlockIcon}}" ng-attr-alt="{{altText}}" height="40" width="40" class="card-play-status">
+</span>
+                        </p>
+
+                        <div class="info-content">
+                            <h3 class="m-b-0">Pizza My Heart</h3>
+                            <span class="small sub-heading">2011</span>
+                            <hr class="hr-xs hr-left hr-colored">
+                            <h5>Actors</h5>
+                                <p>David<br>Morgan<br>Janice</p>
+                            <p>The Prestolanis and the Montebellos fight over who has the best pizza.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+    </div>
+    <div class="movies-grid col-xs-6 col-md-4 col-lg-3">
+            <div class="poster">
+                <a href="/movies/princess" amplitude-navigation-grid-item-select category-title="Movies" grid-context="Movies" content="Princess" content-type="Movie" grid-index="26">
+                    <img src="https://freeform.azureedge.net/showms/2018/131/b45586a6-6da2-45f2-a9d4-c9112f5ca853.jpg" class="img-fluid"/>
+                    <div class="info-overlay">
+                        <p class="card-info card-info-top-right pull-right">
+                            <span class="sign-in-padlock" data-sign-in-padlock data-requires-sign-in="True" ng-cloak>
+<img ng-src="{{padlockIcon}}" ng-attr-alt="{{altText}}" height="40" width="40" class="card-play-status">
+</span>
+                        </p>
+
+                        <div class="info-content">
+                            <h3 class="m-b-0">Princess</h3>
+                            <span class="small sub-heading">2008</span>
+                            <hr class="hr-xs hr-left hr-colored">
+                            <h5>Actors</h5>
+                                <p>David<br>Morgan<br>Janice</p>
+                            <p>A fairytale romance between William and the beautiful Princess Ithaca.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+    </div>
+    <div class="movies-grid col-xs-6 col-md-4 col-lg-3">
+            <div class="poster">
+                <a href="/movies/ratatouille" amplitude-navigation-grid-item-select category-title="Movies" grid-context="Movies" content="Ratatouille" content-type="Movie" grid-index="27">
+                    <img src="https://freeform.azureedge.net/showms/2018/12/3ee748af-9d74-4059-8d42-69961dac96e1.jpg" class="img-fluid"/>
+                    <div class="info-overlay">
+                        <p class="card-info card-info-top-right pull-right">
+                            <span class="sign-in-padlock" data-sign-in-padlock data-requires-sign-in="True" ng-cloak>
+<img ng-src="{{padlockIcon}}" ng-attr-alt="{{altText}}" height="40" width="40" class="card-play-status">
+</span>
+                        </p>
+
+                        <div class="info-content">
+                            <h3 class="m-b-0">Ratatouille</h3>
+                            <span class="small sub-heading">2007</span>
+                            <hr class="hr-xs hr-left hr-colored">
+                            <h5>Actors</h5>
+                                <p>David<br>Morgan<br>Janice</p>
+                            <p>A rat who cooks becomes friends with a kitchen worker.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+    </div>
+    <div class="movies-grid col-xs-6 col-md-4 col-lg-3">
+            <div class="poster">
+                <a href="/movies/revenge-of-the-bridesmaids" amplitude-navigation-grid-item-select category-title="Movies" grid-context="Movies" content="Revenge of the Bridesmaids" content-type="Movie" grid-index="28">
+                    <img src="https://freeform.azureedge.net/showms/2018/131/ade5d821-e544-44e3-8e32-c73ab8a1cf17.jpg" class="img-fluid"/>
+                    <div class="info-overlay">
+                        <p class="card-info card-info-top-right pull-right">
+                            <span class="sign-in-padlock" data-sign-in-padlock data-requires-sign-in="True" ng-cloak>
+<img ng-src="{{padlockIcon}}" ng-attr-alt="{{altText}}" height="40" width="40" class="card-play-status">
+</span>
+                        </p>
+
+                        <div class="info-content">
+                            <h3 class="m-b-0">Revenge of the Bridesmaids</h3>
+                            <span class="small sub-heading">2010</span>
+                            <hr class="hr-xs hr-left hr-colored">
+                            <h5>Actors</h5>
+                                <p>David<br>Morgan<br>Janice</p>
+                            <p>Abigail and Parker run into their friend who has lost the love of her life.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+    </div>
+    <div class="movies-grid col-xs-6 col-md-4 col-lg-3">
+            <div class="poster">
+                <a href="/movies/role-models" amplitude-navigation-grid-item-select category-title="Movies" grid-context="Movies" content="Role Models" content-type="Movie" grid-index="29">
+                    <img src="https://freeform.azureedge.net/showms/2019/14/af51bee5-4db2-467b-82e4-79b2cff53e47.jpg" class="img-fluid"/>
+                    <div class="info-overlay">
+                        <p class="card-info card-info-top-right pull-right">
+                            <span class="sign-in-padlock" data-sign-in-padlock data-requires-sign-in="True" ng-cloak>
+<img ng-src="{{padlockIcon}}" ng-attr-alt="{{altText}}" height="40" width="40" class="card-play-status">
+</span>
+                        </p>
+
+                        <div class="info-content">
+                            <h3 class="m-b-0">Role Models</h3>
+                            <span class="small sub-heading">2008</span>
+                            <hr class="hr-xs hr-left hr-colored">
+                            <h5>Actors</h5>
+                                <p>David<br>Morgan<br>Janice</p>
+                            <p>Two men are forced to enroll in a Big Brother program.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+    </div>
+    <div class="movies-grid col-xs-6 col-md-4 col-lg-3">
+            <div class="poster">
+                <a href="/movies/step-up-all-in" amplitude-navigation-grid-item-select category-title="Movies" grid-context="Movies" content="Step Up All In" content-type="Movie" grid-index="30">
+                    <img src="https://freeform.azureedge.net/showms/2018/305/fa4b89bd-e1c9-4fdf-aed3-b9fa86a4909c.jpg" class="img-fluid"/>
+                    <div class="info-overlay">
+                        <p class="card-info card-info-top-right pull-right">
+                            <span class="sign-in-padlock" data-sign-in-padlock data-requires-sign-in="True" ng-cloak>
+<img ng-src="{{padlockIcon}}" ng-attr-alt="{{altText}}" height="40" width="40" class="card-play-status">
+</span>
+                        </p>
+
+                        <div class="info-content">
+                            <h3 class="m-b-0">Step Up All In</h3>
+                            <span class="small sub-heading">2014</span>
+                            <hr class="hr-xs hr-left hr-colored">
+                            <h5>Actors</h5>
+                                <p>David<br>Morgan<br>Janice</p>
+                            <p>Sean finds a new dance crew for a competition.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+    </div>
+    <div class="movies-grid col-xs-6 col-md-4 col-lg-3">
+            <div class="poster">
+                <a href="/movies/step-up-revolution" amplitude-navigation-grid-item-select category-title="Movies" grid-context="Movies" content="Step Up Revolution" content-type="Movie" grid-index="31">
+                    <img src="https://freeform.azureedge.net/showms/2018/61/e8cf4bf0-fd2d-4017-bb5f-4a81e36d11bb.jpg" class="img-fluid"/>
+                    <div class="info-overlay">
+                        <p class="card-info card-info-top-right pull-right">
+                            <span class="sign-in-padlock" data-sign-in-padlock data-requires-sign-in="True" ng-cloak>
+<img ng-src="{{padlockIcon}}" ng-attr-alt="{{altText}}" height="40" width="40" class="card-play-status">
+</span>
+                        </p>
+
+                        <div class="info-content">
+                            <h3 class="m-b-0">Step Up Revolution</h3>
+                            <span class="small sub-heading">2012</span>
+                            <hr class="hr-xs hr-left hr-colored">
+                            <h5>Actors</h5>
+                                <p>David<br>Morgan<br>Janice</p>
+                            <p>A woman aspires to become a dancer in Miami.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+    </div>
+    <div class="movies-grid col-xs-6 col-md-4 col-lg-3">
+            <div class="poster">
+                <a href="/movies/teen-spirit" amplitude-navigation-grid-item-select category-title="Movies" grid-context="Movies" content="Teen Spirit" content-type="Movie" grid-index="32">
+                    <img src="https://freeform.azureedge.net/showms/2018/131/1140cc72-33a9-4f69-a031-0e48583afd41.jpg" class="img-fluid"/>
+                    <div class="info-overlay">
+                        <p class="card-info card-info-top-right pull-right">
+                            <span class="sign-in-padlock" data-sign-in-padlock data-requires-sign-in="True" ng-cloak>
+<img ng-src="{{padlockIcon}}" ng-attr-alt="{{altText}}" height="40" width="40" class="card-play-status">
+</span>
+                        </p>
+
+                        <div class="info-content">
+                            <h3 class="m-b-0">Teen Spirit</h3>
+                            <span class="small sub-heading">2011</span>
+                            <hr class="hr-xs hr-left hr-colored">
+                            <h5>Actors</h5>
+                                <p>David<br>Morgan<br>Janice</p>
+                            <p>In order to save her soul, Amber must pull off a high-school miracle.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+    </div>
+    <div class="movies-grid col-xs-6 col-md-4 col-lg-3">
+            <div class="poster">
+                <a href="/movies/time-share" amplitude-navigation-grid-item-select category-title="Movies" grid-context="Movies" content="Time Share" content-type="Movie" grid-index="33">
+                    <img src="https://freeform.azureedge.net/showms/2018/172/36334e06-1d6f-41b3-8068-7faccccb22e3.jpg" class="img-fluid"/>
+                    <div class="info-overlay">
+                        <p class="card-info card-info-top-right pull-right">
+                            <span class="sign-in-padlock" data-sign-in-padlock data-requires-sign-in="True" ng-cloak>
+<img ng-src="{{padlockIcon}}" ng-attr-alt="{{altText}}" height="40" width="40" class="card-play-status">
+</span>
+                        </p>
+
+                        <div class="info-content">
+                            <h3 class="m-b-0">Time Share</h3>
+                            <span class="small sub-heading">2005</span>
+                            <hr class="hr-xs hr-left hr-colored">
+                            <h5>Actors</h5>
+                                <p>David<br>Morgan<br>Janice</p>
+                            <p>Two single-parent families rent the same beach house.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+    </div>
+    <div class="movies-grid col-xs-6 col-md-4 col-lg-3">
+            <div class="poster">
+                <a href="/movies/the-waterboy" amplitude-navigation-grid-item-select category-title="Movies" grid-context="Movies" content="The Waterboy" content-type="Movie" grid-index="34">
+                    <img src="https://freeform.azureedge.net/showms/2017/334/a297bca3-b0c3-4770-9e8f-99753396cee7.jpg" class="img-fluid"/>
+                    <div class="info-overlay">
+                        <p class="card-info card-info-top-right pull-right">
+                            <span class="sign-in-padlock" data-sign-in-padlock data-requires-sign-in="True" ng-cloak>
+<img ng-src="{{padlockIcon}}" ng-attr-alt="{{altText}}" height="40" width="40" class="card-play-status">
+</span>
+                        </p>
+
+                        <div class="info-content">
+                            <h3 class="m-b-0">The Waterboy</h3>
+                            <span class="small sub-heading">1998</span>
+                            <hr class="hr-xs hr-left hr-colored">
+                            <h5>Actors</h5>
+                                <p>David<br>Morgan<br>Janice</p>
+                            <p>A waterboy stars on a college football team.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+    </div>
+    <div class="movies-grid col-xs-6 col-md-4 col-lg-3">
+            <div class="poster">
+                <a href="/movies/the-wild-life" amplitude-navigation-grid-item-select category-title="Movies" grid-context="Movies" content="The Wild Life" content-type="Movie" grid-index="35">
+                    <img src="https://freeform.azureedge.net/showms/2019/1/f6341aa4-9872-4ddc-8bb7-3f55ff89effa.png" class="img-fluid"/>
+                    <div class="info-overlay">
+                        <p class="card-info card-info-top-right pull-right">
+                            <span class="sign-in-padlock" data-sign-in-padlock data-requires-sign-in="True" ng-cloak>
+<img ng-src="{{padlockIcon}}" ng-attr-alt="{{altText}}" height="40" width="40" class="card-play-status">
+</span>
+                        </p>
+
+                        <div class="info-content">
+                            <h3 class="m-b-0">The Wild Life</h3>
+                            <span class="small sub-heading">2016</span>
+                            <hr class="hr-xs hr-left hr-colored">
+                            <h5>Actors</h5>
+                                <p>David<br>Morgan<br>Janice</p>
+                            <p>How Robinson Crusoe came to be stranded on an island.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+    </div>
+</div>
+
+<div class="row row-tight">
+    <div class="col-xs-12 text-xs-center">
+        <a class="btn btn-outline-primary btn-outro" href="/shows">Browse Shows <i class="fa fa-angle-right"></i></a>
+    </div>
+</div>
+</div>
+</div>
+<div class="jumbotron bg-secondary">
+        <div class="container">
+          
+      
+<div class="row bg-secondary">
+    <div class="col-sm-12 col-lg-3 bg-secondary">
+            <ul class="list-group list-group-flush bg-secondary">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Morbi leo risus</li>
+                    <li class="list-group-item">Porta ac consectetur ac</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                  </ul>
+    </div>
+    <div class="col-sm-12 col-lg-3">
+            <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Morbi leo risus</li>
+                    <li class="list-group-item">Porta ac consectetur ac</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                  </ul>
+    </div>
+    <div class="col-sm-12 col-lg-3">
+            <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Morbi leo risus</li>
+                    <li class="list-group-item">Porta ac consectetur ac</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                  </ul>
+    </div>
+    <div class="col-sm-12 col-lg-3">
+            <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Morbi leo risus</li>
+                    <li class="list-group-item">Porta ac consectetur ac</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                  </ul>
+    </div>
+</div>
+</div>
+
+
+     <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
